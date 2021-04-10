@@ -1,0 +1,1163 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+
+body {
+  font-family: 'Bangers', cursive;
+  margin: 0;
+  overflow: hidden;
+}
+
+/*****START SCREEN*****/
+#screen {
+  position: relative;
+}
+
+#game_background {
+  background-image: url('./images/background.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100vw;
+  height: 56.25vw;
+}
+
+/*static element*/
+.character {
+  background-image: url('./images/character.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 1;
+  width: 30vw;
+  height: 70vh;
+  top: 18vw;
+  left: 7vw;
+}
+
+#start_msg {
+  display: block;
+  background-image: url('./images/what-to-do.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 50vw;
+  height: 50vh;
+  top: 13.5vw;
+  left: 22vw;
+}
+
+#message {
+  background-image: url('./images/message.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 3;
+  width: 90vw;
+  height: 80vh;
+  top: 10vw;
+  left: 22vw;
+
+}
+
+#flying_like {
+  position: absolute;
+  top: -15vw;
+  animation-delay: 0s;
+
+}
+
+.flying_like_sprite {
+  background-image: url('./images/ig-heart.svg');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  z-index: 3;
+  width: 15vw;
+  height: 15vw;
+}
+
+#flying_empty1 {
+  position: absolute;
+  top: -25vw;
+  left: 25vw;
+}
+
+.flying_empty_sprite1 {
+  background-image: url('./images/heart-empty.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: 3;
+  width: 15vw;
+  height: 15vw;
+}
+
+#flying_empty2 {
+  position: absolute;
+  top: -20vw;
+  left: 55vw;
+}
+
+.flying_empty_sprite2 {
+  background-image: url('./images/heart-empty.svg');
+  background-size: 80%;
+  background-repeat: no-repeat;
+  z-index: 3;
+  width: 15vw;
+  height: 15vw;
+}
+
+
+
+.position1 {
+  left: 15vw;
+
+}
+
+.position2 {
+
+  left: 35vw;
+}
+
+.position3 {
+  left: 60vw;
+
+}
+
+.position4 {
+  left: 71vw;
+}
+
+
+.position5 {
+  left: 83vw;
+}
+
+.position6 {
+  left: 17vw;
+}
+
+
+/*SHAPES*/
+#row1 {
+  display: flex;
+}
+
+#first1 {
+  background-image: url('./images/set01-1.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  width: 30vw;
+  height: 30vh;
+  top: 15vw;
+  left: 25vw;
+
+}
+
+
+#first2 {
+
+  background-image: url('./images/set01-2.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  width: 30vw;
+  height: 30vh;
+  top: 15vw;
+  left: 40vw;
+
+}
+
+#first3 {
+  background-image: url('./images/set01-3.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  width: 30vw;
+  height: 30vh;
+  top: 15vw;
+  left: 55vw;
+
+}
+
+
+#row2 {
+  display: flex;
+
+}
+
+
+#second1 {
+  background-image: url('./images/set02-1.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  width: 30vw;
+  height: 30vh;
+  top: 15vw;
+  left: 25vw;
+
+}
+
+
+#second2 {
+
+  background-image: url('./images/set02-2.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  width: 30vw;
+  height: 30vh;
+  top: 15vw;
+  left: 40vw;
+
+}
+
+#second3 {
+  background-image: url('./images/set02-3.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  width: 30vw;
+  height: 30vh;
+  top: 15vw;
+  left: 55vw;
+
+}
+
+
+#row3 {
+  display: flex;
+
+}
+
+#third1 {
+  background-image: url('./images/set03-3_1.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  width: 30vw;
+  height: 30vh;
+  top: 15vw;
+  left: 25vw;
+
+}
+
+
+#third2 {
+
+  background-image: url('./images/set03-2.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  width: 30vw;
+  height: 30vh;
+  top: 15vw;
+  left: 40vw;
+
+}
+
+#third3 {
+  background-image: url('./images/set03-3.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  width: 30vw;
+  height: 30vh;
+  top: 15vw;
+  left: 55vw;
+
+}
+
+
+
+
+#row4 {
+  display: flex;
+
+}
+
+#fourth1 {
+  background-image: url('./images/set04-1.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  width: 30vw;
+  height: 30vh;
+  top: 15.5vw;
+  left: 27vw;
+
+}
+
+
+#fourth2 {
+
+  background-image: url('./images/set04-2.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  width: 30vw;
+  height: 30vh;
+  top: 15vw;
+  left: 40vw;
+
+
+}
+
+#fourth3 {
+  background-image: url('./images/set04-3.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  width: 30vw;
+  height: 30vh;
+  top: 15vw;
+  left: 55vw;
+
+}
+
+
+#row5 {
+  display: flex;
+
+}
+
+#fifth1 {
+  background-image: url('./images/set05-1.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  width: 30vw;
+  height: 30vh;
+  top: 15vw;
+  left: 25vw;
+
+}
+
+
+#fifth2 {
+
+  background-image: url('./images/set05-2.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  width: 30vw;
+  height: 30vh;
+  top: 15vw;
+  left: 40vw;
+
+}
+
+#fifth3 {
+  background-image: url('./images/set05-3.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  width: 30vw;
+  height: 30vh;
+  top: 15vw;
+  left: 55vw;
+
+}
+
+#row6 {
+  display: flex;
+
+}
+
+#six1 {
+  background-image: url('./images/set06-1.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  width: 30vw;
+  height: 30vh;
+  top: 15vw;
+  left: 26vw;
+
+}
+
+
+#six2 {
+
+  background-image: url('./images/set06-2.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  width: 30vw;
+  height: 30vh;
+  top: 15vw;
+  left: 41.5vw;
+
+}
+
+#six3 {
+  background-image: url('./images/set06-3.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  width: 30vw;
+  height: 30vh;
+  top: 15vw;
+  left: 55vw;
+
+}
+
+
+#row7 {
+  display: flex;
+
+}
+
+#seven1 {
+  background-image: url('./images/set07-1.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  width: 30vw;
+  height: 30vh;
+  top: 15vw;
+  left: 25vw;
+
+}
+
+
+#seven2 {
+
+  background-image: url('./images/set07-1_1.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  width: 30vw;
+  height: 30vh;
+  top: 15vw;
+  left: 40.2vw;
+
+}
+
+#seven3 {
+  background-image: url('./images/set07-3.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  width: 30vw;
+  height: 30vh;
+  top: 14.5vw;
+  left: 55vw;
+
+}
+
+#row8 {
+  display: flex;
+
+}
+
+#eight1 {
+  background-image: url('./images/set08-3.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  width: 30vw;
+  height: 30vh;
+  top: 15vw;
+  left: 25vw;
+
+}
+
+
+#eight2 {
+
+  background-image: url('./images/set08-2.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  width: 30vw;
+  height: 30vh;
+  top: 15vw;
+  left: 43vw;
+
+}
+
+#eight3 {
+  background-image: url('./images/set08-1.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  width: 30vw;
+  height: 30vh;
+  top: 15vw;
+  left: 55vw;
+
+}
+
+#row9 {
+  display: flex;
+
+}
+
+#nine1 {
+  background-image: url('./images/set09-1.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  width: 30vw;
+  height: 30vh;
+  top: 15vw;
+  left: 25vw;
+
+}
+
+
+#nine2 {
+
+  background-image: url('./images/set09-1_1.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  width: 30vw;
+  height: 30vh;
+  top: 15vw;
+  left: 39vw;
+
+}
+
+#nine3 {
+  background-image: url('./images/set09-2.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  width: 30vw;
+  height: 30vh;
+  top: 15.7vw;
+  left: 56vw;
+
+}
+
+
+#row10 {
+  display: flex;
+
+}
+
+#ten1 {
+  background-image: url('./images/set10-1.svg');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  width: 35vw;
+  height: 30vh;
+  top: 18.5vw;
+  left: 25vw;
+
+}
+
+
+#ten2 {
+
+  background-image: url('./images/set10-1_1.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  width: 30vw;
+  height: 30vh;
+  top: 15vw;
+  left: 41.5vw;
+
+
+}
+
+#ten3 {
+  background-image: url('./images/set10-1_2.svg');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  width: 35vw;
+  height: 30vh;
+  top: 15vw;
+  left: 55vw;
+
+}
+
+
+#game_ui {
+  display: block;
+
+}
+
+/****SETTINGS****/
+
+#settings_Btn {
+  background-image: url('./images/settings.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 6;
+  width: 3vw;
+  height: 3vw;
+  left: 2VW;
+  top: 1vw;
+}
+
+#settings_screen {
+  background-image: url('./images/settings_screen.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 5;
+  width: 50vw;
+  height: 50vw;
+  top: 2vw;
+  left: 25vw;
+
+}
+
+#close_Btn {
+  background-image: url('./images/close_btn.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 5;
+  width: 5vw;
+  height: 5vw;
+  top: .3vw;
+  left: 43.5vw;
+
+}
+
+#music {
+  background-image: url('./images/music.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 5;
+  width: 35vw;
+  height: 35vw;
+  top: 21vw;
+  left: 7vw;
+
+}
+
+#sounds {
+  background-image: url('./images/sound.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 5;
+  width: 35vw;
+  height: 35vw;
+  top: 30vw;
+  left: 7vw;
+
+}
+
+/*****GAME UI ELEMENTS*****/
+
+#time_board {
+  position: absolute;
+  z-index: 1;
+  width: 40vw;
+  height: 40vh;
+  left: 16.5vw;
+  top: 3.5vw;
+  font-size: 4vw;
+  color: rgb(0, 94, 208);
+  font-weight: bold;
+
+}
+
+#clock {
+  background-image: url('./images/clock.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 1;
+  width: 11vw;
+  height: 12vw;
+  top: -.5vw;
+  left: 6.5vw;
+}
+
+#energy_board {
+  display: flex;
+
+
+}
+
+#hearts1 {
+ position: absolute;
+  left: 68vw;
+  top: .5vw;
+}
+
+#hearts2 {
+
+  position: absolute;
+  left: 71vw;
+  top: .5vw;
+}
+
+#hearts3 {
+
+  position: absolute;
+  left: 74vw;
+  top: .5vw;
+}
+
+#hearts4 {
+
+  position: absolute;
+  left: 77vw;
+  top: .5vw;
+}
+
+#hearts5 {
+
+  position: absolute;
+  left: 80vw;
+  top: .5vw;
+}
+
+#hearts6 {
+
+  position: absolute;
+  left: 83vw;
+  top: .5vw;
+}
+
+#hearts7 {
+
+  position: absolute;
+  left: 86vw;
+  top: .5vw;
+}
+
+#hearts8 {
+
+  position: absolute;
+  left: 89vw;
+  top: .5vw;
+}
+
+
+#hearts9 {
+
+  position: absolute;
+  left: 92vw;
+  top: .5vw;
+}
+
+
+#hearts10 {
+
+  position: absolute;
+  left: 95vw;
+  top: .5vw;
+}
+
+
+.hearts_sprite {
+  background-image: url('./images/ig-heart.svg');
+  background-size: 20%;
+  background-repeat: no-repeat;
+  z-index: 1;
+  width: 15vw;
+  height: 15vw;
+}
+
+.empty_heart_sprite {
+  background-image: url('./images/heart-empty.svg');
+  background-size: 20%;
+  background-repeat: no-repeat;
+  z-index: 1;
+  width: 15vw;
+  height: 15vw;
+}
+
+#score_board {
+
+  position: absolute;
+  z-index: 1;
+  width: 40vw;
+  height: 40vh;
+  left: 75vw;
+  top: 3.5vw;
+  font-size: 4vw;
+  color: rgb(0, 94, 208);
+  font-weight: bold;
+
+
+}
+
+
+/*****START SCREEN*****/
+
+#start {
+  background-image: url(./images/start-screen.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100vw;
+  height: 56.25vw;
+}
+
+
+#btn_play {
+  background-image: url('./images/btn_play.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 5;
+  width: 15vw;
+  height: 15vw;
+  left: 28VW;
+  top: 40vw;
+
+}
+
+#logo {
+  background-image: url('./images/logo.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 5;
+  width: 70vw;
+  height: 60vw;
+  left: 14VW;
+  top: 0vw;
+
+}
+
+/*****LEVEL COMPLETE SCREEN*****/
+#level_complete {
+  background-image: url('./images/levelcomplete.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100vw;
+  height: 56.25vw;
+}
+
+#close_yellow {
+  background-image: url('./images/close_yellow.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 5;
+  width: 5vw;
+  height: 15vw;
+  left: 89VW;
+  top: 2vw;
+}
+
+/*****GAME OVER SCREEN*****/
+#gameover_screen {
+  background-image: url('./images/gameover_screen.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100vw;
+  height: 56.25vw;
+}
+
+
+#btn_replay {
+  background-image: url('./images/btn_replay.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 5;
+  width: 20vw;
+  height: 20vw;
+  left: 39VW;
+  top: 35vw;
+}
+
+#close_purple {
+  background-image: url('./images/close_purple.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 5;
+  width: 5vw;
+  height: 15vw;
+  left: 89VW;
+  top: 2vw;
+}
+
+#gameover_logo {
+  background-image: url('./images/game_over_logo.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 5;
+  width: 70vw;
+  height: 60vw;
+  left: 14VW;
+  top: 5vw;
+
+}
+
+
+/*****ANIMATIONS*****/
+
+.logo_swirl {
+  -webkit-animation: swirl-in 0.6s ease-out both;
+  animation: swirl-in .8s ease-out both;
+
+}
+
+
+@-webkit-keyframes swirl-in {
+  0% {
+    -webkit-transform: rotate(-540deg) scale(0);
+    transform: rotate(-540deg) scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes swirl-in {
+  0% {
+    -webkit-transform: rotate(-540deg) scale(0);
+    transform: rotate(-540deg) scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.pulsate {
+
+  animation-name: btn_puls;
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
+
+
+}
+
+@keyframes btn_puls {
+
+  to {
+    transform: scale(.93, .93);
+    -webkit-transform: scale(.93, .93);
+    -moz-transform: scale(.93, .93);
+    -ms-transform: scale(.93, .93);
+    -o-transform: scale(.93, .93);
+  }
+}
+
+.appear {
+  animation-name: shapes_appear;
+  animation-duration: .8s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes shapes_appear {
+  0% {
+    opacity: 100%;
+  }
+
+  80% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0%;
+
+  }
+
+}
+
+.larger {
+  animation-name: larger_shape;
+  animation-duration: .2s;
+
+}
+
+@keyframes larger_shape {
+  to {
+    transform: scale(.99, .99);
+    -webkit-transform: scale(.99, .99);
+    -moz-transform: scale(.99, .99);
+    -ms-transform: scale(.99, .99);
+    -o-transform: scale(.99, .99);
+  }
+}
+
+.fly {
+  animation-name: flying;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes flying {
+  0% {
+    top: -20vw;
+  }
+
+  100% {
+    top: 60vw;
+  }
+}
+
+
+.appear2 {
+  animation-name: message_appear;
+  animation-duration: 6s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes message_appear {
+  0% {
+    opacity: 100%;
+
+  }
+
+  80% {
+    opacity: 100%;
+
+  }
+
+  100% {
+    opacity: 0%;
+
+
+  }
+
+}
+
+.zoom_out {
+  animation-name: zoom_out;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(.67, .47, .33, 1.46);
+  animation-fill-mode: forwards;
+}
+
+@keyframes zoom_out {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+
+  20% {
+    transform: scale(.8);
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -o-transform: scale(.8);
+  }
+
+  60% {
+    opacity: 1;
+
+  }
+
+  100% {
+    transform: translate(40vw, -40vw) scale(2) rotate(15deg);
+    opacity: 0;
+    -webkit-transform: translate(40vw, -40vw) scale(2) rotate(15deg);
+    -moz-transform: translate(40vw, -40vw) scale(2) rotate(15deg);
+    -ms-transform: translate(40vw, -40vw) scale(2) rotate(15deg);
+    -o-transform: translate(40vw, -40vw) scale(2) rotate(15deg);
+  }
+}
+
+.shake {
+  animation-name: shake;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes shake {
+  0% {
+
+    transform: rotate(0) scale(1);
+  }
+
+  10% {
+    transform: rotate(-5deg) scale(1.5);
+    -webkit-transform: rotate(-5deg) scale(1.5);
+    -moz-transform: rotate(-5deg) scale(1.5);
+    -ms-transform: rotate(-5deg) scale(1.5);
+    -o-transform: rotate(-5deg) scale(1.5);
+  }
+
+  50% {
+    transform: rotate(10deg) scale(1.5);
+    -webkit-transform: rotate(10deg) scale(1.5);
+    -moz-transform: rotate(10deg) scale(1.5);
+    -ms-transform: rotate(10deg) scale(1.5);
+    -o-transform: rotate(10deg) scale(1.5);
+  }
+
+  100% {
+    transform: rotate(-10deg) scale(1.5);
+    -webkit-transform: rotate(-10deg) scale(1.5);
+    -moz-transform: rotate(-10deg) scale(1.5);
+    -ms-transform: rotate(-10deg) scale(1.5);
+    -o-transform: rotate(-10deg) scale(1.5);
+  }
+}
+
+.speed1 {
+  animation-duration: 5s;
+}
+
+.speed2 {
+  animation-duration: 4.5s;
+}
+
+.paused {
+  animation-play-state: paused;
+}
+
+.delay {
+  animation-delay: .3s;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="screen">
+
+    <div id="game">
+
+      <div id="game_background"></div>
+      <div id="game_elements">
+        <div class="character"></div>
+        <div id="start_msg" class="start_msg_sprite"></div>
+        <div id="message" class="message_sprite"></div>
+        <div id="flying_like" class="flying_like_sprite"></div>
+        <div id="flying_empty1" class="flying_empty_sprite1"></div>
+        <div id="flying_empty2" class="flying_empty_sprite2"></div>
+        <div id="settings_Btn" class="setting_btn_sprite"></div>
+        <div class="qmark"></div>
+
+
+        <div id="row1">
+          <div id="first1" class="wrong1"></div>
+          <div id="first2" class="right"></div>
+          <div id="first3" class="wrong2"></div>
+
+        </div>
+
+
+        <div id="row2">
+          <div id="second1" class="wrong1"></div>
+          <div id="second2" class="right"></div>
+          <div id="second3" class="wrong2"></div>
+        </div>
+
+        <div id="row3">
+          <div id="third1" class="wrong1"></div>
+          <div id="third2" class="wrong2"></div>
+          <div id="third3" class="right"></div>
+        </div>
+
+
+        <div id="row4">
+          <div id="fourth1" class="wrong1"></div>
+          <div id="fourth2" class="right"></div>
+          <div id="fourth3" class="wrong2"></div>
+        </div>
+
+        <div id="row5">
+          <div id="fifth1" class="right"></div>
+          <div id="fifth2" class="wrong1"></div>
+          <div id="fifth3" class="wrong2"></div>
+        </div>
+
+        <div id="row6">
+          <div id="six1" class="wrong1"></div>
+          <div id="six2" class="wrong2"></div>
+          <div id="six3" class="right"></div>
+        </div>
+
+        <div id="row7">
+          <div id="seven1" class="wrong1"></div>
+          <div id="seven2" class="right"></div>
+          <div id="seven3" class="wrong2"></div>
+        </div>
+
+        <div id="row8">
+          <div id="eight1" class="wrong1"></div>
+          <div id="eight2" class="right"></div>
+          <div id="eight3" class="wrong2"></div>
+        </div>
+
+
+        <div id="row9">
+          <div id="nine1" class="wrong1"></div>
+          <div id="nine2" class="wrong2"></div>
+          <div id="nine3" class="right"></div>
+        </div>
+
+        <div id="row10">
+          <div id="ten1" class="wrong1"></div>
+          <div id="ten2" class="wrong2"></div>
+          <div id="ten3" class="right"></div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+    <div id="game_ui">
+
+      <div id="time_board">Time: 60</div>
+      <div id="clock" class="clock_sprite"></div>
+
+      <div id="energy_board">
+        <div id="hearts0"></div>
+        <div id="hearts1" class="hearts_sprite"></div>
+        <div id="hearts2" class="hearts_sprite"></div>
+        <div id="hearts3" class="hearts_sprite"></div>
+        <div id="hearts4" class="hearts_sprite"></div>
+        <div id="hearts5" class="hearts_sprite"></div>
+        <div id="hearts6" class="hearts_sprite"></div>
+        <div id="hearts7" class="hearts_sprite"></div>
+        <div id="hearts8" class="hearts_sprite"></div>
+        <div id="hearts9" class="hearts_sprite"></div>
+        <div id="hearts10" class="hearts_sprite"></div>
+      </div>
+
+      <div id="score_board">
+        score: 0 /10
+      </div>
+
+      <audio src="./sounds/backgroundmusic.mp3" id="backgroundMusic"></audio>
+      <audio src="./sounds/voice.mp3" id="voice" ></audio>
+      <audio id="winSound" src="./sounds/winSound.mp3"></audio>
+      <audio id="loseSound" src="./sounds/loseSound.mp3"></audio>
+      <audio id="levelSound" src="./sounds/levelSound.mp3"></audio>
+      <audio id="gameOverSound" src="./sounds/gameOverSound.mp3"></audio>
+    </div>
+
+    <div id="start">
+      <div id="start_screen">
+        <div id="logo" class="logo_sprite">
+          <div id="btn_play" class="btn_sprite"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--TO DO-->
+    <div id="gameover">
+      <div id="gameover_screen">
+        <div id="gameover_logo" class="gameover_sprite"></div>
+        <div id="btn_replay" class="btn_replay_sprite"></div>
+        <div id="close_purple" class="close_purple_sprite"></div>
+      </div>
+    </div>
+
+    <div id="levelcomplete">
+      <div id="level_complete"></div>
+      <!-- TO DO-->
+      <div id="close_yellow" class="close_yellow_sprite"></div>
+
+    </div>
+
+    <div id="settings">
+      <div id="settings_screen">
+        <div id="music" class="music_sprite"></div>
+        <div id="sounds" class="sounds_sprite"></div>
+        <div id="close_Btn" class="close_Btn_sprite"></div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
